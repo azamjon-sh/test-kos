@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import family from '@/assets/hero-family.png'
+import print from '@/assets/print-album.png'
+import star from '@/assets/star-fan.png'
+
 interface Feature {
   icon: string
   text: string
@@ -30,7 +34,7 @@ const services: Service[] = [
     title: 'Найди свои фото из парка',
     subtitle: 'по одному селфи',
     description: 'Наши фотоловушки снимают вас на аттракционах, у героев и в самых ярких моментах. Загрузите селфи — система за секунды найдёт все ваши кадры за день.',
-    image: '@/assets/hero-family.png',
+    image: family,
     imageAlt: 'Семья в парке развлечений',
     href: 'https://park.super.photo',
     features: [
@@ -68,7 +72,7 @@ const services: Service[] = [
     title: 'Распечатаем фото и фотокниги,',
     subtitle: 'привезём СДЭК',
     description: 'AI сам соберёт макет фотокниги из ваших снимков. Печатаем на профессиональной бумаге Fuji, доставка до пункта выдачи за 1–2 дня.',
-    image: '@/assets/print-album.png',
+    image: print,
     imageAlt: 'Фотокнига с семейными фото',
     href: 'https://print.super.photo',
     orderImage: true,
@@ -85,7 +89,7 @@ const services: Service[] = [
     title: 'Сделай кадр',
     subtitle: 'со своим кумиром',
     description: 'Концерты, кулисы, бытовые сценки — нейросеть собирает фотореалистичные кадры с любимой звездой. Каждый сценарий согласован лично с артистом.',
-    image: '@/assets/star-fan.png',
+    image: star,
     imageAlt: 'Фото со звездой',
     href: 'https://star.super.photo',
     specialContent: true,
