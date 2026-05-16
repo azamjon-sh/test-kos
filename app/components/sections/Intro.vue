@@ -24,18 +24,18 @@
           Найди свои фото из парка по селфи, освежи их нейросетью, распечатай в фотокнигу или сделай кадр с кумиром. Всё в одном сервисе.
         </p>
         <div class="mt-9 flex flex-col gap-3 sm:flex-row">
-          <a href="#park" class="btn-primary text-base md:text-lg">
+          <UiButton href="#park" tag="a" variant="primary" class="text-base md:text-lg">
             Найти свои фото
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-          <a href="#app" class="btn-ghost-dark text-base md:text-lg">
+          </UiButton>
+          <UiButton href="#app" variant="ghost-dark" tag="a" class="text-base md:text-lg">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
               <polyline points="7 10 12 15 17 10" />
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
             Скачать приложение
-          </a>
+          </UiButton>
         </div>
 
         <WidgetParkSearch />

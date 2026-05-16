@@ -88,7 +88,7 @@ onUnmounted(() => {
         <span class="flex-1 truncate text-sm font-medium text-ink-700">Загрузи селфи</span>
         <input type="file" accept="image/*" class="sr-only" />
       </label>
-      <button type="button" class="btn-primary justify-center whitespace-nowrap md:w-auto">Найти мои фото</button>
+      <UiButton tag="button" variant="primary" type="button" class="justify-center whitespace-nowrap md:w-auto">Найти мои фото</UiButton>
     </div>
     <p class="mt-3 text-xs leading-relaxed text-white/60">
       Фото нужно только для поиска совпадений. Мы не публикуем его и не передаём третьим лицам.

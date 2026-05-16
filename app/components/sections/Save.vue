@@ -12,8 +12,8 @@
       <p class="mx-auto mt-5 max-w-xl text-lg text-ink-700">Начните с одного селфи — посмотрите, сколько ваших фото уже
         ждёт вас.</p>
       <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-        <a href="#park" class="btn-primary text-lg">Найти свои фото →</a>
-        <a href="#app" class="btn-secondary text-lg">Скачать приложение</a>
+        <UiButton href="#park" variant="primary" tag="a">Найти свои фото →</UiButton>
+        <UiButton href="#app" variant="secondary">Скачать приложение</UiButton>
       </div>
     </div>
   </section>

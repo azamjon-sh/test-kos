@@ -5,7 +5,7 @@
 <template>
   <AppHeader/>
   <main>
-    <slug/>
+    <slot/>
   </main>
   <AppFooter/>
 </template>

@@ -55,7 +55,7 @@ function toggleMob() {
         <a href="#ai" class="border-b border-ink-100 py-2.5" @click="closeMob">AI-редактор</a>
         <a href="#print" class="border-b border-ink-100 py-2.5" @click="closeMob">Печать</a>
         <a href="#star" class="border-b border-ink-100 py-2.5" @click="closeMob">Со звездой</a>
-        <a href="#app" class="py-2.5" @click="closeMob">Скачать приложение</a>
+        <UiButton href="#app" class="py-2.5" tag="a" variant="ghost-dark" @click="closeMob">Скачать приложение</UiButton>
       </nav>
     </div>
   </header>
