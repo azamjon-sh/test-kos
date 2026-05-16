@@ -14,10 +14,9 @@ function toggleMob() {
 
 <template>
   <header class="fixed top-0 left-0 right-0 z-50 border-b border-ink-200/60 bg-white/80 backdrop-blur">
-    <div class="mx-auto flex h-16 max-w-[1280px] items-center gap-6 px-5 lg:px-8">
+    <div class="container flex h-16 items-center gap-6">
       <a href="#top" class="flex items-center gap-2.5" aria-label="SUPER.PHOTO">
-        <img src="@/assets/logo-sp-light.png" alt="" class="h-9 w-auto" width="36" height="36" />
-
+        <img src="@/assets/logo-sp-light.png" alt="" class="h-9 w-auto"/>
       </a>
       <nav class="ml-auto hidden items-center gap-1 text-[15px] font-medium text-ink-700 lg:flex">
         <a href="#park" class="rounded-lg px-3 py-2 transition-colors hover:bg-ink-100">Фото из парка</a>

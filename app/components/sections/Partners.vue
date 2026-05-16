@@ -1,10 +1,53 @@
 <script setup lang="ts">
+import ostrovMechtyImg from '@/assets/partners/ostrov-mechty.png'
+import solntseImg from '@/assets/partners/solntse.png'
+import skazkaImg from '@/assets/partners/skazka.png'
+import atomImg from '@/assets/partners/atom.png'
+import smpImg from '@/assets/partners/smp.svg'
+import limpopotImg from '@/assets/partners/limpopo.png'
+import h2oImg from '@/assets/partners/h2o.svg'
+import zavidovoImg from '@/assets/partners/zavidovo.svg'
 
+interface Partner {
+  id: string
+  name: string
+  image: string
+  alt: string
+}
+
+const mainPartners: Partner[] = [
+  { id: 'ostrov-mechty', name: 'Остров Мечты', image: ostrovMechtyImg, alt: 'Остров Мечты' },
+  { id: 'solntse', name: 'Солнце Москвы', image: solntseImg, alt: 'Солнце Москвы' },
+  { id: 'skazka', name: 'Парк «Сказка»', image: skazkaImg, alt: 'Парк Сказка' },
+  { id: 'atom', name: 'Музей «АТОМ»', image: atomImg, alt: 'Музей АТОМ' },
+  { id: 'smp', name: 'СоюзМультПарк', image: smpImg, alt: 'СоюзМультПарк' },
+  { id: 'limpopo', name: 'Лимпопо', image: limpopotImg, alt: 'Аквапарк Лимпопо' },
+  { id: 'h2o', name: 'Аквапарк H2O', image: h2oImg, alt: 'Аквапарк H2O' },
+  { id: 'zavidovo', name: 'Завидово Аква &amp; СПА', image: zavidovoImg, alt: 'Завидово Аква СПА' }
+]
+
+const additionalPartners = [
+  'MIKS Karting',
+  'Орион',
+  'Московские канатные дороги',
+  'E-GO Karting',
+  'ZelenoKart',
+  'Лемар',
+  'Энергия Высоты',
+  'Тополя',
+  'Zhooki',
+  'Lovko Park',
+  'ОренПарк',
+  'Немо',
+  'Планета',
+  'Тропический Берег',
+  '«Град»'
+]
 </script>
 
 <template>
   <section class="border-b border-ink-200 bg-ink-50 py-16 lg:py-20" aria-labelledby="partners-title">
-    <div class="mx-auto max-w-[1280px] px-5 lg:px-8">
+    <div class="container">
       <div class="mb-10 text-center lg:mb-12">
         <p class="mb-3 text-[13px] font-bold uppercase tracking-[0.2em] text-violet">Нам доверяют</p>
         <h2 id="partners-title" class="font-display text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
@@ -16,57 +59,18 @@
       </div>
 
       <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 md:gap-4">
-        <div class="partner-tile">
-          <img src="@/assets/partners/ostrov-mechty.png" alt="Остров Мечты" loading="lazy" />
-          <span class="partner-name">Остров Мечты</span>
-        </div>
-        <div class="partner-tile">
-          <img src="@/assets/partners/solntse.png" alt="Солнце Москвы" loading="lazy" />
-          <span class="partner-name">Солнце Москвы</span>
-        </div>
-        <div class="partner-tile">
-          <img src="@/assets/partners/skazka.png" alt="Парк Сказка" loading="lazy" />
-          <span class="partner-name">Парк «Сказка»</span>
-        </div>
-        <div class="partner-tile">
-          <img src="@/assets/partners/atom.png" alt="Музей АТОМ" loading="lazy" />
-          <span class="partner-name">Музей «АТОМ»</span>
-        </div>
-        <div class="partner-tile">
-          <img src="@/assets/partners/smp.svg" alt="СоюзМультПарк" loading="lazy" />
-          <span class="partner-name">СоюзМультПарк</span>
-        </div>
-        <div class="partner-tile">
-          <img src="@/assets/partners/limpopo.png" alt="Аквапарк Лимпопо" loading="lazy" />
-          <span class="partner-name">Лимпопо</span>
-        </div>
-        <div class="partner-tile">
-          <img src="@/assets/partners/h2o.svg" alt="Аквапарк H2O" loading="lazy" />
-          <span class="partner-name">Аквапарк H2O</span>
-        </div>
-        <div class="partner-tile">
-          <img src="@/assets/partners/zavidovo.svg" alt="Завидово Аква СПА" loading="lazy" />
-          <span class="partner-name">Завидово Аква &amp; СПА</span>
+        <div v-for="partner in mainPartners" :key="partner.id" class="partner-tile">
+          <img :src="partner.image" :alt="partner.alt" loading="lazy" />
+          <span class="partner-name">{{ partner.name }}</span>
         </div>
       </div>
 
       <div class="mt-8 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-ink-500">
-        <span class="font-semibold text-ink-700">И ещё 18 партнёров:</span>
-        <span>MIKS Karting</span><span class="text-ink-300">·</span>
-        <span>Орион</span><span class="text-ink-300">·</span>
-        <span>Московские канатные дороги</span><span class="text-ink-300">·</span>
-        <span>E-GO Karting</span><span class="text-ink-300">·</span>
-        <span>ZelenoKart</span><span class="text-ink-300">·</span>
-        <span>Лемар</span><span class="text-ink-300">·</span>
-        <span>Энергия Высоты</span><span class="text-ink-300">·</span>
-        <span>Тополя</span><span class="text-ink-300">·</span>
-        <span>Zhooki</span><span class="text-ink-300">·</span>
-        <span>Lovko Park</span><span class="text-ink-300">·</span>
-        <span>ОренПарк</span><span class="text-ink-300">·</span>
-        <span>Немо</span><span class="text-ink-300">·</span>
-        <span>Планета</span><span class="text-ink-300">·</span>
-        <span>Тропический Берег</span><span class="text-ink-300">·</span>
-        <span>«Град»</span>
+        <span class="font-semibold text-ink-700">И ещё {{ additionalPartners.length }} партнёров:</span>
+        <template v-for="(partner, index) in additionalPartners" :key="`partner-${index}`">
+          <span>{{ partner }}</span>
+          <span v-if="index < additionalPartners.length - 1" class="text-ink-300">·</span>
+        </template>
       </div>
     </div>
   </section>

@@ -5,11 +5,11 @@
 <template>
   <section id="top" class="grad-soft relative overflow-hidden pb-20 pt-32 text-white lg:pb-28 lg:pt-40">
     <div class="pointer-events-none absolute -right-40 -top-32 hidden h-[680px] w-[680px] opacity-25 spin-slow md:block">
-      <img src="@/assets/logo-mark.png" alt="" class="h-full w-full" width="680" height="680" />
+      <img src="@/assets/logo-mark.png" alt="" class="h-full w-full"/>
     </div>
     <div class="pointer-events-none absolute inset-0 dots opacity-30" />
 
-    <div class="relative mx-auto max-w-[1280px] px-5 lg:px-8">
+    <div class="relative container">
       <div class="max-w-3xl">
         <p class="mb-6 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.2em] text-cyan-300">
           <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-cyan" />

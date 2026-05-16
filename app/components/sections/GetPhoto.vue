@@ -4,7 +4,7 @@
 
 <template>
   <section class="bg-white py-16 lg:py-20">
-    <div class="mx-auto max-w-[1280px] space-y-20 px-5 lg:space-y-32 lg:px-8">
+    <div class="container space-y-20 lg:space-y-32">
       <article id="park" class="reveal grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div class="order-2 lg:order-1">
           <div class="mb-5 flex items-center gap-3">
@@ -36,8 +36,7 @@
         </div>
         <div class="order-1 rounded-2xl grad-card-park p-5 lg:order-2 lg:p-8">
           <div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-ink-100 shadow-card">
-            <img src="@/assets/hero-family.png" alt="Семья в парке развлечений" class="h-full w-full object-cover"
-                 width="800" height="600"/>
+            <img src="@/assets/hero-family.png" alt="Семья в парке развлечений" class="h-full w-full object-cover"/>
             <div class="absolute bottom-4 left-4 right-4 rounded-xl bg-white/95 p-4 shadow-card backdrop-blur">
               <div class="flex items-center gap-3">
                 <div class="grad-brand grid h-10 w-10 place-items-center rounded-full text-white">
@@ -141,7 +140,7 @@
         <div class="order-1 rounded-2xl grad-card-print p-5 lg:order-2 lg:p-8">
           <div class="aspect-[4/3] overflow-hidden rounded-xl bg-ink-100 shadow-card">
             <img src="@/assets/print-album.png" alt="Фотокнига с семейными фото" class="h-full w-full object-cover"
-                 width="800" height="600"/>
+                 />
           </div>
         </div>
       </article>
@@ -149,8 +148,7 @@
       <article id="star" class="reveal grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div class="rounded-2xl grad-card-star p-5 lg:p-8">
           <div class="relative aspect-[4/3] overflow-hidden rounded-xl bg-ink-100 shadow-card">
-            <img src="@/assets/star-fan.png" alt="Фото со звездой" class="h-full w-full object-cover" width="800"
-                 height="600"/>
+            <img src="@/assets/star-fan.png" alt="Фото со звездой" class="h-full w-full object-cover"/>
             <div
                 class="absolute left-4 top-4 rounded-full bg-navy/85 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur">
               ✨ AI-generated

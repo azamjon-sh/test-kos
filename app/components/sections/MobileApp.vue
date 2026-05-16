@@ -5,7 +5,7 @@
 <template>
   <section id="app" class="grad-soft relative overflow-hidden py-20 text-white lg:py-28">
     <div class="pointer-events-none absolute inset-0 dots opacity-20"/>
-    <div class="relative mx-auto grid max-w-[1280px] items-center gap-12 px-5 lg:grid-cols-2 lg:px-8">
+    <div class="container relative grid items-center gap-12 lg:grid-cols-2">
       <div class="reveal">
         <p class="mb-5 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.2em] text-cyan-300">
           <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-cyan"/>
@@ -71,7 +71,7 @@
             <div class="absolute inset-0 grad-soft p-5 pt-12">
               <div class="mb-4 flex items-center justify-between">
                 <div class="flex items-center gap-2">
-                  <img src="@/assets/logo-mark.png" alt="" class="h-7 w-7" width="28" height="28"/>
+                  <img src="@/assets/logo-mark.png" alt="" class="h-7 w-7"/>
                   <span class="text-sm font-extrabold text-white">SUPER.PHOTO</span>
                 </div>
                 <div class="h-7 w-7 rounded-full bg-white/15"/>
